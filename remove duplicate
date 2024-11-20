@@ -1,0 +1,38 @@
+#include<stdio.h>
+void remov_e(int *a,int n)
+{
+    int i,j,k;
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                for(k=j;k<n;k++)
+                {
+                    a[k]=a[k+1];
+                }
+                j--;
+                n--;
+            }
+        }
+}
+}
+int main()
+{
+int n,i;
+printf("enter the size of an array:");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++)
+{
+    printf("%d element=",i+1);
+    scanf("%d",&a[i]);
+}
+ remov_e(a,n);
+for(i=0;i<n;i++)
+{
+    printf("\n%d",a[i]);
+   }
+  return 0;
+}
