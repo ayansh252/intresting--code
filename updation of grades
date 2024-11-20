@@ -1,0 +1,27 @@
+#include<stdio.h>
+int round_grade(int *a,int n)
+{
+	int b,c,d,e,i;
+	for(i=0;i<n;i++)
+	{
+		b=a[i]/5;
+		c=b+1;
+		d=c*5;
+		e=d-a[i];
+	if(e<3)
+	{
+		printf("\nupdated grade marks are=%d",d);
+	}
+	else
+	{
+		printf("\ngrades are =%d",a[i]);
+	}
+}
+}
+int main()
+{
+int a[]={23,74,22,67,66};
+int n=sizeof(a)/sizeof(a[0]);
+ round_grade(a,n);
+return 0;
+}
