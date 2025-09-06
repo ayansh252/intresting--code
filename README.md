@@ -7,7 +7,7 @@ This repo is like my **playground of ideas** 🛠️.
 
 ## 📖 About
 - Contains short programs, small projects, and experimental features.
-- Written in different languages (mainly Java, JavaScript, Python, etc.).
+- Written in c
 - Each file/folder is independent and demonstrates a concept.
 
 ---
